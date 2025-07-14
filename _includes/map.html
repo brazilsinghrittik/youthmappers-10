@@ -1,21 +1,21 @@
 <div id="map" style="height:420px; width:100%"></div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var map = L.map('map').setView([23.870051, 90.320258], 17); // Set zoom to 17 or your desired level
+    var map = L.map('map').setView([23.866496, 90.314722], 19); // zoom 19 as per your link
     L.control.scale().addTo(map);
-    L.tileLayer('{{ site.map_tiles.url}}', {
+    L.tileLayer('{{ site.map_tiles.url }}', {
       attribution: '{{ site.map_tiles.attribution }}',
       maxZoom: {{ site.map_tiles.maxZoom }}
     }).addTo(map);
     map.scrollWheelZoom.disable();
 
-    L.circleMarker([23.870051, 90.320258], {
+    L.circleMarker([23.866496, 90.314722], {
       radius: 33,
       weight: 3.5,
       color: "#ffc700",
       fillColor: "#f92329",
       fillOpacity: 0.0,
       className: 'map-marker'
-    }).bindPopup("<h3>Conference Venue</h3><p>Eastern University, Ashulia, Dhaka</p><p><a href='https://osm.org/go/6EqG7uId?m=&node=6273365208' target='_blank'>Open location on osm.org</a>.</p>").addTo(map);
+    }).bindPopup("<h3>Conference Venue</h3><p>Eastern University, Dhaka</p><p><a href='https://www.openstreetmap.org/way/1341115318' target='_blank'>Open location on osm.org</a>.</p>").addTo(map);
   }, false);
 </script>
