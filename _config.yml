@@ -9,24 +9,24 @@ github_username: brazilsinghrittik
 # Build settings
 markdown: kramdown
 
-# Color settings (customize freely)
+# Color settings (refined from your original colors)
 color:
-  primary-dark: '#e63946'           # A bold red (optional theme)
-  primary-light: '#f1faee'          # Soft light
-  background-light: '#ffffff'
-  links: '#1d3557'
-  links-light: '#a8dadc'
-  links-white: '#457b9d'
-  text: '#222'
-  text-light: '#555'
+  primary-dark: '#1c3d75'         # Deep blue for headers/navs
+  primary-light: '#2464aa'        # Your original blue
+  background-light: '#f5f5f5'     # Soft light gray for better readability
+  links: '#ffffff'                # White links on dark backgrounds
+  links-light: '#dbe9f4'          # Light hover effect
+  links-white: '#2464aa'          # Consistent blue for text links
+  text: '#1a1a1a'                 # Dark gray text for contrast
+  text-light: '#333333'           # Slightly lighter for secondary text
 
-# Map tiles (keep default or customize with Mapbox if needed)
+# Map tiles (OpenStreetMap default)
 map_tiles:
   url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
   attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
   maxZoom: 19
 
-# Files to ignore
+# Repo files to not include in built site
 exclude:
   - Dockerfile*
   - docker-compose.*
@@ -35,7 +35,7 @@ exclude:
   - node_modules
   - vendor
 
-# Permalink settings
+# Permalink structure
 permalink: /:title/
 relative_permalinks: false
 defaults:
